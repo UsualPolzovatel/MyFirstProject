@@ -1,10 +1,5 @@
 html, body {height: 100%; margin: 0; font-size: 4.5pt;}
 body {display: flex; flex-direction: column; background-image: url('fon.webp'); background-size: 300px; font-size: 4rem; font-family: Trebuchet MS;}
-
-@media (max-width: 1024px) {html {font-size: 4pt;} img:hover {transform: scale(1.1);}}
-@media (max-width: 768px) {html {font-size: 3.5pt;} img:hover {transform: scale(1.25);}}
-@media (max-width: 480px) {html {font-size: 3pt;} img:hover {transform: scale(1.5);}}
-
 a {text-decoration: none; color: inherit;}
 img {transition: all 0.5s;}
 img:hover {transform: scale(1.1); transition: all 0.5s;}
@@ -22,3 +17,7 @@ img:hover {transform: scale(1.1); transition: all 0.5s;}
 #nav a:hover {background: rgba(0,0,0,0.1); transition: all 0.3s;}
 
 #main {margin: 5rem 1rem; flex-grow: 1;}
+
+@media (max-width: 1024px) {html {font-size: 4pt;} img:hover {transform: scale(1.1);}}
+@media (max-width: 768px) {html {font-size: 3.5pt;} img:hover {transform: scale(1.25);}}
+@media (max-width: 480px) {html {font-size: 3pt;} img:hover {transform: scale(1.5);}}
