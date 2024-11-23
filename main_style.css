@@ -10,13 +10,13 @@ img {transition: all 0.5s;}
 img:hover {transform: scale(1.2); transition: all 0.5s;}
 
 #header, #footer {background: radial-gradient(closest-side, #a7051d 30%, #7c0316); width: 100%; text-align: center; display: inline-block; color: white; font-family: Garamond;}
-#header h6 {margin: 20rem 0rem; font-size: 15rem;}
+#header h6 {margin: 15rem 0rem; font-size: 10rem;}
 #footer h6 {margin: 10rem 0rem; font-size: 4rem; font-family: Trebuchet MS;}
 #footer a {font-family: Garamond; color: #fad293;}
 #footer a:hover {color: white;}
 
 #nav {text-align: center; display: flex; font-family: Georgia;}
-#nav a {font-weight: bold; padding: 20px 0px; font-size: 4.8rem; flex-grow: 1}
+#nav a {font-weight: bold; padding: 20px 0px; font-size: 4rem; flex-grow: 1}
 #nav a:hover {background: rgba(0,0,0,0.1); box-shadow: 0px 2px 4px rgba(0,0,0,0.7); transition: all 0.3s;}
 
 #main {margin: 5rem 1rem; flex-grow: 1;}
