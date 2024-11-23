@@ -3,8 +3,7 @@ body {display: flex; flex-direction: column; background-image: url('fon.webp'); 
 
 @media (max-width: 1366px) {html {font-size: 3.8pt;}}
 @media (max-width: 1024px) {html {font-size: 3.5pt;}}
-@media (max-width: 768px) {html {font-size: 3pt;}}
-@media (max-width: 480px) {html {font-size: 2.8pt;}}
+@media (max-width: 768px) {html {font-size: 14px;}}
 
 a {text-decoration: none; color: inherit;}
 img {transition: all 0.5s;}
