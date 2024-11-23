@@ -1,0 +1,24 @@
+html, body {height: 100%; margin: 0; font-size: 4.5pt;}
+body {display: flex; flex-direction: column; background-image: url('fon.webp'); background-size: 300px; font-size: 4rem; font-family: Trebuchet MS;}
+
+@media (max-width: 1024px) {html {font-size: 4pt;} img:hover {transform: scale(1.1);}}
+@media (max-width: 768px) {html {font-size: 3.5pt;} img:hover {transform: scale(1.25);}}
+@media (max-width: 480px) {html {font-size: 3pt;} img:hover {transform: scale(1.5);}}
+
+a {text-decoration: none; color: inherit;}
+img {transition: all 0.5s;}
+img:hover {transform: scale(1.1); transition: all 0.5s;}
+
+#header, #footer {background: radial-gradient(closest-side, #a7051d 30%, #7c0316); width: 100%; text-align: center; display: inline-block; color: white; font-family: Garamond;}
+#header {box-shadow: 0px 4px 8px rgba(0,0,0,0.5)}
+#footer {box-shadow: 0px -4px 8px rgba(0,0,0,0.5)}
+#header h6 {margin: 15rem 0 10rem 0; font-size: 10rem;}
+#footer h6 {margin: 10rem 0rem; font-size: 4rem; font-family: Trebuchet MS;}
+#footer a {font-family: Garamond; color: #fad293;}
+#footer a:hover {color: white;}
+
+#nav {text-align: center; display: flex; font-family: Georgia;}
+#nav a {font-weight: bold; padding: 10px 0px; font-size: 4rem; flex-grow: 1; box-shadow: 0px 2px 2px rgba(0,0,0,0.5); transition: all 0.3s;}
+#nav a:hover {background: rgba(0,0,0,0.1); transition: all 0.3s;}
+
+#main {margin: 5rem 1rem; flex-grow: 1;}
