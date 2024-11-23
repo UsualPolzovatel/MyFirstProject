@@ -11,8 +11,8 @@ img {transition: all 0.5s;}
 img:hover {transform: scale(1.2); transition: all 0.5s;}
 
 #header, #footer {background: radial-gradient(closest-side, #a7051d 30%, #7c0316); width: 100%; text-align: center; display: inline-block; color: white; font-family: Garamond;}
-#header h6 {margin: 20rem 0rem; font-size: 15rem;}
-#footer h6 {margin: 10rem 0rem; font-size: 4rem; font-family: Trebuchet MS;}
+#header h6 {margin: 10rem 0rem; font-size: 15rem;}
+#footer h6 {margin: 5rem 0rem; font-size: 4rem; font-family: Trebuchet MS;}
 #footer a {font-family: Garamond; color: #fad293;}
 #footer a:hover {color: white;}
 
