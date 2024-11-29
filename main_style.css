@@ -1,5 +1,5 @@
 html, body {height: 100%; margin: 0; font-size: 3.75pt;}
-body {display: flex; flex-direction: column; background-image: url('/fon.webp'); background-size: 300px; font-size: 3.8rem; font-family: Trebuchet MS;}
+body {display: flex; flex-direction: column; background-image: url('fon.webp'); background-size: 300px; font-size: 3.8rem; font-family: Trebuchet MS;}
 a, b {text-decoration: none; color: inherit; font-family: Georgia; font-weight: bold;}
 img {transition: all 0.5s;}
 .show img:hover {transform: scale(1); transition: all 0.5s;}
