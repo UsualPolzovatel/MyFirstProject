@@ -12,37 +12,29 @@ document.addEventListener('DOMContentLoaded', () => {
   tooltip.style.zIndex = '1000';
   tooltip.style.display = 'none';
   document.body.appendChild(tooltip);
-  let activeElement = null;
+
   document.addEventListener('click', (event) => {
-    const target = event.target;
-    if (target.hasAttribute('title')) {
-      const title = target.getAttribute('title');
-      if (activeElement !== target) {
-        if(activeElement) {
-          const originalTitle = activeElement.getAttribute('title')
-          target.removeAttribute('data-original-title');
-          activeElement.setAttribute('title', originalTitle);
-          activeElement.removeAttribute('data-original-title');
-        }
-        target.setAttribute('data-original-title', title);
-        tooltip.textContent = title;
-        tooltip.style.display = 'block';
-        const x = event.pageX;
-        const y = event.pageY +10;
-        var a = x + "px";
-        var b = y + "px";
-        tooltip.style.left = a;
-        tooltip.style.top = b;
-        activeElement = target;
-      }
-    } else {
-      if (activeElement) {
-        tooltip.style.display = 'none';
-        const originalTitle = activeElement.getAttribute('data-original-title');
-        activeElement.setAttribute('title', originalTitle);
-        activeElement.removeAttribute('data-original-title');
-        activeElement = null;
-      }
+    const el = event.target;
+    if (el.hasAttribute('title')) {
+      const v = el.getAttribute('title');
+      el.setAttribute('data-title', v);
+      el.removeAttribute('title');
+    }
+
+    if (el.hasAttribute('data-title')) {
+      const t = el.getAttribute('data-title');
+      const x = event.pageX;
+      const y = event.pageY + 10;
+      var a = x + 'px';
+      var b = y + 'px';
+      tooltip.style.left = a;
+      tooltip.style.top = b;
+      tooltip.innerHTML = t;
+      tooltip.style.display = 'block';
+    }
+
+    else {
+      tooltip.style.display = 'none';
     }
   });
 });
